@@ -13,5 +13,7 @@
 #endif /* WeChat_Bridging_Header_h */
 
 
+#import "Define_header.h"
+#import "UIView+WeChat.h"
 
 

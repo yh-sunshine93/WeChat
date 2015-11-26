@@ -153,6 +153,9 @@
 		D3C545781C06EE0100CB3EF3 /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C544E91C06EE0100CB3EF3 /* libidn.a */; };
 		D3C5457A1C06EE9700CB3EF3 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C545791C06EE9700CB3EF3 /* libresolv.tbd */; };
 		D3C5457C1C06EE9C00CB3EF3 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C5457B1C06EE9C00CB3EF3 /* libxml2.tbd */; };
+		D3C5458B1C06F7E100CB3EF3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C5458A1C06F7E100CB3EF3 /* LoginViewController.swift */; };
+		D3C5458E1C06FE1300CB3EF3 /* qwe.otf in Resources */ = {isa = PBXBuildFile; fileRef = D3C5458D1C06FE1300CB3EF3 /* qwe.otf */; };
+		D3C545951C07022B00CB3EF3 /* UIView+WeChat.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C545941C07022B00CB3EF3 /* UIView+WeChat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -457,6 +460,11 @@
 		D3C545791C06EE9700CB3EF3 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		D3C5457B1C06EE9C00CB3EF3 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		D3C545861C06F69300CB3EF3 /* WeChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeChat-Bridging-Header.h"; sourceTree = "<group>"; };
+		D3C5458A1C06F7E100CB3EF3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D3C5458D1C06FE1300CB3EF3 /* qwe.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = qwe.otf; sourceTree = "<group>"; };
+		D3C545911C06FEBF00CB3EF3 /* Define_header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define_header.h; sourceTree = "<group>"; };
+		D3C545931C07022B00CB3EF3 /* UIView+WeChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WeChat.h"; sourceTree = "<group>"; };
+		D3C545941C07022B00CB3EF3 /* UIView+WeChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WeChat.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -494,6 +502,8 @@
 		D3C543661C06EDAE00CB3EF3 /* WeChat */ = {
 			isa = PBXGroup;
 			children = (
+				D3C545921C07021300CB3EF3 /* Extension */,
+				D3C5458C1C06FE1200CB3EF3 /* resouce */,
 				D3C5457D1C06EEE300CB3EF3 /* Controller */,
 				D3C5457E1C06EEE300CB3EF3 /* Model */,
 				D3C5457F1C06EEE300CB3EF3 /* View */,
@@ -503,6 +513,7 @@
 				D3C543701C06EDAE00CB3EF3 /* LaunchScreen.storyboard */,
 				D3C543731C06EDAE00CB3EF3 /* Info.plist */,
 				D3C545861C06F69300CB3EF3 /* WeChat-Bridging-Header.h */,
+				D3C545911C06FEBF00CB3EF3 /* Define_header.h */,
 			);
 			path = WeChat;
 			sourceTree = "<group>";
@@ -1416,8 +1427,26 @@
 		D3C545801C06EF0100CB3EF3 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				D3C5458A1C06F7E100CB3EF3 /* LoginViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		D3C5458C1C06FE1200CB3EF3 /* resouce */ = {
+			isa = PBXGroup;
+			children = (
+				D3C5458D1C06FE1300CB3EF3 /* qwe.otf */,
+			);
+			path = resouce;
+			sourceTree = "<group>";
+		};
+		D3C545921C07021300CB3EF3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D3C545931C07022B00CB3EF3 /* UIView+WeChat.h */,
+				D3C545941C07022B00CB3EF3 /* UIView+WeChat.m */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1481,6 +1510,7 @@
 				D3C543721C06EDAE00CB3EF3 /* LaunchScreen.storyboard in Resources */,
 				D3C545721C06EE0100CB3EF3 /* README.txt in Resources */,
 				D3C5436F1C06EDAE00CB3EF3 /* Assets.xcassets in Resources */,
+				D3C5458E1C06FE1300CB3EF3 /* qwe.otf in Resources */,
 				D3C545771C06EE0100CB3EF3 /* build-libidn.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1520,6 +1550,7 @@
 				D3C545471C06EE0100CB3EF3 /* XMPPMessageArchiving_Contact_CoreDataObject.m in Sources */,
 				D3C5451D1C06EE0100CB3EF3 /* XMPPRoomHybridStorage.m in Sources */,
 				D3C545531C06EE0100CB3EF3 /* XMPPStreamManagement.m in Sources */,
+				D3C5458B1C06F7E100CB3EF3 /* LoginViewController.swift in Sources */,
 				D3C5453E1C06EE0100CB3EF3 /* XMPPSoftwareVersion.m in Sources */,
 				D3C5455D1C06EE0100CB3EF3 /* XMPPMessageCarbons.m in Sources */,
 				D3C544EE1C06EE0100CB3EF3 /* XMPPDeprecatedPlainAuthentication.m in Sources */,
@@ -1586,6 +1617,7 @@
 				D3C545181C06EE0100CB3EF3 /* XMPPRoom.xcdatamodeld in Sources */,
 				D3C545621C06EE0100CB3EF3 /* DDList.m in Sources */,
 				D3C545011C06EE0100CB3EF3 /* XMPPCoreDataStorage.m in Sources */,
+				D3C545951C07022B00CB3EF3 /* UIView+WeChat.m in Sources */,
 				D3C544EF1C06EE0100CB3EF3 /* XMPPDigestMD5Authentication.m in Sources */,
 				D3C545071C06EE0100CB3EF3 /* XMPPReconnect.m in Sources */,
 				D3C544F11C06EE0100CB3EF3 /* XMPPSCRAMSHA1Authentication.m in Sources */,
