@@ -456,7 +456,7 @@
 		D3C544EB1C06EE0100CB3EF3 /* XMPPFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPFramework.h; sourceTree = "<group>"; };
 		D3C545791C06EE9700CB3EF3 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		D3C5457B1C06EE9C00CB3EF3 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
-		D3C545851C06F19C00CB3EF3 /* Bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-header.h"; sourceTree = "<group>"; };
+		D3C545861C06F69300CB3EF3 /* WeChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeChat-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -502,7 +502,7 @@
 				D3C5436E1C06EDAE00CB3EF3 /* Assets.xcassets */,
 				D3C543701C06EDAE00CB3EF3 /* LaunchScreen.storyboard */,
 				D3C543731C06EDAE00CB3EF3 /* Info.plist */,
-				D3C545851C06F19C00CB3EF3 /* Bridging-header.h */,
+				D3C545861C06F69300CB3EF3 /* WeChat-Bridging-Header.h */,
 			);
 			path = WeChat;
 			sourceTree = "<group>";
@@ -1744,7 +1744,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.WeChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "WeChat/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeChat/WeChat-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -1763,7 +1763,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.WeChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "WeChat/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeChat/WeChat-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -1786,6 +1786,7 @@
 				D3C543781C06EDAE00CB3EF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
